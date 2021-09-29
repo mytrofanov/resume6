@@ -1,10 +1,10 @@
 import * as React from 'react';
 import './App.css';
 import ScopedCssBaseline from '@material-ui/core/ScopedCssBaseline';
-
 import {Navbar} from "./components/navbar/Navbar";
 import {Header} from "./components/header/Header";
 import {Portfolio} from "./components/portfolio/Portfolio";
+import {MyWorks} from "./components/portfolio/data";
 
 export default function App() {
     return (
@@ -17,7 +17,7 @@ export default function App() {
 
                     <Header/>
 
-                  <Portfolio/>
+                  <Portfolio MyWorks={MyWorks} />
 
                 </div>
 

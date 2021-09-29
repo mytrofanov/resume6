@@ -1,20 +1,27 @@
 import React from 'react'
 import s from './Portfolio.module.css'
-import samurai from '/src/images/samurai.jpg'
+import {Work} from './Work'
+import {Grid} from "@material-ui/core";
 
 
-export const Portfolio = () => {
-        return (
+export const Portfolio = (props) => {
+    return (
         <div className={s.PortfolioBlock}>
-
-            Portfolio
-
-            <div className={s.resume} id="resume">
-                <img src={samurai} className={s.samurai} id="samurai" alt="Социальная сеть"/>
-                <div className={s.name}>Social Network</div>
-                <div className={s.description}>Social Network was made using React, Redux, React-Redux, Typescript </div>
-                <div className={s.reference}>View Project </div>
+            <div>
+                Portfolio
             </div>
+            <Grid container spacing={5}>
+                {props.MyWorks.map(item =>
+
+                    <Work key={item.id}
+                          image={item.image}
+                          name={item.name}
+                          description={item.description}
+                          reference={item.reference}
+                    />
+                )
+                }
+            </Grid>
 
         </div>
     )
