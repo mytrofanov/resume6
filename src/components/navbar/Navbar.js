@@ -1,5 +1,4 @@
 import * as React from "react";
-import portrait from "../../images/portrait_cr.jpg";
 import s from './Navbar.module.css';
 
 
@@ -7,8 +6,14 @@ export const Navbar = () => {
     return (
         <div>
             <div className={s.navbar}>
-                <img alt="Mytrofanov Maxym" src={portrait} id="portrait" className={s.portrait}/>
 
+                {/*<img alt="Mytrofanov Maxym" src={portrait} id="portrait" className={s.portrait}/>*/}
+
+                <div className={s.portraitSubscription}>
+                    <span className={s.portraitSubscriptionName}>
+                        Mytrofanov Maxym Front-end Developer
+                    </span>
+                </div>
                 <div id="navi_list" className={s.navi_list}>
                     <li id="Home">Home</li>
                     <li id="About">About me</li>

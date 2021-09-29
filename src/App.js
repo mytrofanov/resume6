@@ -16,9 +16,9 @@ export default function App() {
                 <div className="right_column" id="right_column">
 
                     <Header/>
-
-                  <Portfolio MyWorks={MyWorks} />
-
+                    <div className="infoBlock">
+                        <Portfolio MyWorks={MyWorks}/>
+                    </div>
                 </div>
 
             </div>

@@ -20,6 +20,7 @@ export const Work = (props) => {
                     <Typography variant="h6" >{props.description}</Typography>
                     <CardActions>
                     <Button
+                        variant="contained"
                         value="<?php the_field('Открыть проект');?>"
                         onClick={()=>{window.open(ref)}}
                          >Открыть проект</Button>

@@ -15,11 +15,29 @@
     font-size: 22px;
     font-weight: normal;
 }
+
 .navi_list li {
     padding-bottom: 44px;
 }
 
-.portrait {
+.portraitSubscription {
+    display: flex;
+    align-items: flex-end;
+
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+
     width: 100%;
-    height: auto;
+    height: 275px;
+    background: url('/src/images/portrait_cr.jpg') center no-repeat;
+    background-size: contain;
+
+
+}
+
+.portraitSubscriptionName {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto 15px;
 }
