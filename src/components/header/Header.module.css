@@ -1,0 +1,29 @@
+.header {
+    display: block;
+    width: 100%;
+    height: 436px;
+    background: url('/src/images/header.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.header_title {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    width: 632px;
+    margin-top: 114px;
+    margin-left: 121px;
+}
+
+.header_annotation {
+    font-family: "Raleway", sans-serif;
+    color: #c6c6c6;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.7;
+    width: 531px;
+    height: 44px;
+    margin: 15px auto;
+}
