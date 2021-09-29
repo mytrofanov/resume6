@@ -1,0 +1,25 @@
+.navbar {
+    display: block;
+    float: left;
+    width: 240px;
+    height: 100%;
+    background-color: #383843;
+}
+
+.navi_list {
+    padding-left: 30px;
+    padding-top: 22px;
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+    color: #a6a6a9;
+    font-size: 22px;
+    font-weight: normal;
+}
+.navi_list li {
+    padding-bottom: 44px;
+}
+
+.portrait {
+    width: 100%;
+    height: auto;
+}
