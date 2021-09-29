@@ -1,9 +1,12 @@
 import React from 'react'
+import {AppBar} from 'material-ui';
+
 
 export const AppHeader = () => {
+
     return (
         <div>
-        <h1>Header</h1>
+            <AppBar title="Title"/>
         </div>
     )
 }
