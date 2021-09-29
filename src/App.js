@@ -4,6 +4,7 @@ import ScopedCssBaseline from '@material-ui/core/ScopedCssBaseline';
 
 import {Navbar} from "./components/navbar/Navbar";
 import {Header} from "./components/header/Header";
+import {Portfolio} from "./components/portfolio/Portfolio";
 
 export default function App() {
     return (
@@ -16,12 +17,7 @@ export default function App() {
 
                     <Header/>
 
-                    <div className="portfolio_block" id="portfolio_block">
-                        <span className="portfolio_block_span">Portfolio</span>
-                        <div className="portfolio_inner_block">
-                            portfolio_inner_block
-                        </div>
-                    </div>
+                  <Portfolio/>
 
                 </div>
 
