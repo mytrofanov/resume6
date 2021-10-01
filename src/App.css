@@ -19,3 +19,17 @@
     width: 100%;
 
 }
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.feedback {
+    width: 50%;
+    background-color: red;
+}
+.contact {
+    width: 50%;
+    background-color: gray;
+}

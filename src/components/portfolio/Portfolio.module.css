@@ -6,21 +6,16 @@
     width: 400px;
     height: auto;
 }
-.works{
 
-}
+.PortfolioName {
 
+    width: 65px;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 32px;
 
-.resume{
-
-}
-
-.name{
-
-}
-.description {
-
-}
-.reference{
-
+    border-bottom-width: 3px;
+    border-bottom-color: #dc646f;
+    border-bottom-style: solid;
+    margin-bottom: 43px;
 }

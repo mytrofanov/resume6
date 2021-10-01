@@ -19,7 +19,18 @@ export default function App() {
                     <div className="infoBlock">
                         <Portfolio MyWorks={MyWorks}/>
                     </div>
+                    <div className="bottom">
+                        <div className="feedback">
+                            Feedback
+                        </div>
+                        <div className="contact">
+                            Contacts
+                        </div>
+                    </div>
+
                 </div>
+
+
 
             </div>
         </ScopedCssBaseline>

@@ -7,9 +7,10 @@ import {Grid} from "@material-ui/core";
 export const Portfolio = (props) => {
     return (
         <div className={s.PortfolioBlock}>
-            <div>
+            <div className={s.PortfolioName}>
                 Portfolio
             </div>
+
             <Grid container spacing={5}>
                 {props.MyWorks.map(item =>
 
