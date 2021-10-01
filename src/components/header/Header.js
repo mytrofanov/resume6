@@ -30,7 +30,8 @@ export const Header = () => {
                 <Box sx={
                     {
                         marginLeft: 47,
-                        marginTop: 5
+                        marginTop: 5,
+                        mb: 116
                     }
                 }>
 

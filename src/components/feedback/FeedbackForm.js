@@ -28,10 +28,10 @@ export default function FeedbackForm() {
                     </div>
                     <div>
 
-                        <input placeholder="Message*" {...register("Message")} />
+                        <input className="message"  placeholder="Message*" {...register("Message")} />
                     </div>
 
-                    <input type="submit"/>
+                    <input type="submit" value="Hire Me!"/>
                 </form>
             </div>
 

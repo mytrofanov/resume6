@@ -37,6 +37,9 @@ input {
     font-size: 14px;
     font-style: italic;
 }
+.message {
+    line-height: 2em;
+}
 
 label {
     line-height: 2;
@@ -50,16 +53,15 @@ label {
 }
 
 input[type="submit"] {
+    margin-left: 75%;
+    width: 95px;
+    height: 34px;
     background: #ec5990;
     color: white;
-    text-transform: uppercase;
     border: none;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 14px;
-    font-style: italic;
+    font-size: 16px;
     font-weight: 100;
-    letter-spacing: 10px;
+
 }
 
 input[type="submit"]:hover {
