@@ -23,11 +23,13 @@
 .bottom {
     display: flex;
     flex-direction: row;
+    margin-top: 15px;
 }
 
 .feedback {
     width: 50%;
-    background-color: red;
+    margin: 0 10% 0;
+
 }
 .contact {
     width: 50%;

@@ -5,6 +5,7 @@ import {Navbar} from "./components/navbar/Navbar";
 import {Header} from "./components/header/Header";
 import {Portfolio} from "./components/portfolio/Portfolio";
 import {MyWorks} from "./components/portfolio/data";
+import FeedbackForm from "./components/feedback/FeedbackForm";
 
 export default function App() {
     return (
@@ -21,7 +22,7 @@ export default function App() {
                     </div>
                     <div className="bottom">
                         <div className="feedback">
-                            Feedback
+                          <FeedbackForm />
                         </div>
                         <div className="contact">
                             Contacts
