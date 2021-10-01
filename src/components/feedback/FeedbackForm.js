@@ -15,20 +15,20 @@ export default function FeedbackForm() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <label htmlFor="Leave a Message">Leave a Message</label>
-                        <input placeholder="Name*" {...register("Name")} />
+                        <input className="name" placeholder="Name*" {...register("Name")} />
                     </div>
 
                     <div>
 
-                        <input
+                        <input className="email" id="email"
                             placeholder="example@gmail.com*"
                             type="email"
                             {...register("email")}
                         />
                     </div>
                     <div>
-
-                        <input className="message"  placeholder="Message*" {...register("Message")} />
+                        <textarea rows="10" cols="45" name="text" placeholder="Message*" {...register("Message")}/>
+                        {/*<input className={s.message}  placeholder="Message*" {...register("Message")} />*/}
                     </div>
 
                     <input type="submit" value="Hire Me!"/>

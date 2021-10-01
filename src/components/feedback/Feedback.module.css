@@ -28,7 +28,6 @@ p::before {
 
 input {
     display: block;
-    box-sizing: border-box;
     width: 100%;
 
     border: 1px solid gray;
@@ -37,8 +36,8 @@ input {
     font-size: 14px;
     font-style: italic;
 }
-.message {
-    line-height: 2em;
+textarea {
+    width: 100%;
 }
 
 label {

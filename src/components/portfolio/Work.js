@@ -6,13 +6,13 @@ import Button from "@mui/material/Button";
 export const Work = (props) => {
     const ref = props.reference
     return (
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md={6}>
             <Card>
                 <CardMedia
                     src={props.image}
                     component="img"
                     title={props.id}
-                    sx={{width: 700}}
+                    sx={{width: 400}}
                     id={props.image} alt={props.id}/>
                 <CardContent>
                     <Typography variant="h5"
