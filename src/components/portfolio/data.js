@@ -1,5 +1,6 @@
 import samurai from './samurai.jpg'
 import landing from '../../images/landing.jpg'
+import vanila from '../../images/vanilaJS.jpg'
 
 
 
@@ -22,5 +23,11 @@ export const MyWorks = [{
     description: 'This Social Network was build using React, Redux, JavaScript, TypeScript, CSS, Ajax, API, ' +
         'cookie, react-hook-form, Git',
     reference: 'https://mytrofanov.github.io/second/#/profile'
+},{
+    id: 'VanillaJS',
+    image: vanila,
+    name: 'VanillaJS',
+    description: 'This project was made using only Vanilla Javascript and Git',
+    reference: 'https://mytrofanov.github.io/Tasks/'
 }
 ]

@@ -15,7 +15,7 @@ export default function FeedbackForm() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <label htmlFor="Leave a Message">Leave a Message</label>
-                        <input className="name" placeholder="Name*" {...register("Name")} />
+                        <input className="name" id="InputName" placeholder="Name*" {...register("Name")} />
                     </div>
 
                     <div>

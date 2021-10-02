@@ -38,9 +38,7 @@ export const Header = () => {
                     <Button
                         sx={{textTransform: 'none'}}
                         variant="contained" size="large"
-                        onClick={() => {
-                            alert('clicked')
-                        }}>Hire Me!</Button>
+                        onClick={document.getElementById('InputName')}>Hire Me!</Button>
 
                 </Box>
             </ThemeProvider>
