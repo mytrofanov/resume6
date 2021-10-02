@@ -6,6 +6,7 @@ import {Header} from "./components/header/Header";
 import {Portfolio} from "./components/portfolio/Portfolio";
 import {MyWorks} from "./components/portfolio/data";
 import FeedbackForm from "./components/feedback/FeedbackForm";
+import {ContactInfo} from "./components/contacts/ContactInfo";
 
 export default function App() {
     return (
@@ -26,7 +27,7 @@ export default function App() {
                           <FeedbackForm />
                         </div>
                         <div className="contact">
-                            Contacts
+                            <ContactInfo/>
                         </div>
                     </div>
 

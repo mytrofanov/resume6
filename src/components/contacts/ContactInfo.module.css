@@ -1,0 +1,8 @@
+.ContactInfo {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    background-color: #dc646f;
+    width: 15%;
+}
