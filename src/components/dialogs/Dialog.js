@@ -18,6 +18,7 @@ export default function FormDialog() {
         setOpen(false);
     };
 
+
     return (
         <div>
             <Button
@@ -27,25 +28,42 @@ export default function FormDialog() {
                 Hire Me!
             </Button>
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>Subscribe</DialogTitle>
+                <DialogTitle>Leave a Message</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        To subscribe to this website, please enter your email address here. We
-                        will send updates occasionally.
+                        To send me a message, please enter your name and email address here.
                     </DialogContentText>
                     <TextField
                         autoFocus
                         margin="dense"
                         id="name"
+                        label="Name"
+                        type="text"
+                        fullWidth
+                        variant="standard"
+                    />
+                    <TextField
+
+                        margin="dense"
+                        id="email"
                         label="Email Address"
                         type="email"
+                        fullWidth
+                        variant="standard"
+                    />
+                    <TextField
+
+                        margin="dense"
+                        id="message"
+                        label="Message"
+                        type="text"
                         fullWidth
                         variant="standard"
                     />
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
-                    <Button onClick={handleClose}>Subscribe</Button>
+                    <Button onClick={handleClose}>Hire Me!</Button>
                 </DialogActions>
             </Dialog>
         </div>
