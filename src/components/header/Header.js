@@ -1,9 +1,9 @@
 import React from 'react'
 import s from './Header.module.css'
-import Button from '@mui/material/Button';
 import {Box, createTheme} from "@material-ui/core";
 import {purple} from "@material-ui/core/colors";
 import {ThemeProvider} from "@emotion/react";
+import FormDialog from "../dialogs/Dialog";
 
 export const Header = () => {
     const ButtonTheme = createTheme({
@@ -16,9 +16,11 @@ export const Header = () => {
             },
         },
     });
+
     return (
 
         <div className={s.header} id="header">
+
             <div id="header_title" className={s.header_title}>
                 Lets Make Something Great
                 <div className={s.header_annotation} id="header_annotation">
@@ -34,16 +36,11 @@ export const Header = () => {
                         mb: 116
                     }
                 }>
-
-                    <Button
-                        sx={{textTransform: 'none'}}
-                        variant="contained" size="large"
-                        onClick={() => {
-                            alert('clicked')
-                        }}>Hire Me!</Button>
+                    <FormDialog/>
 
                 </Box>
             </ThemeProvider>
+
         </div>
 
     )
