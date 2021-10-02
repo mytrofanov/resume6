@@ -1,14 +1,40 @@
 import s from './ContactInfo.module.css'
+import HomeIcon from '../../images/home_black_24dp.svg'
+import PhoneCall from '../../images/call_black_24dp.svg'
+import SendIcon from '../../images/send_black_24dp.svg'
 
 export function ContactInfo() {
     return (
         <div>
             <div className={s.ContactInfo}>
-                <div className={s.icon}>Icon </div>
-                <div>Ukraine, Kryvyi Rih city, 50082</div>
+
+                <div className={s.InfoBlock}>
+                    <div className={s.icon}>
+                        <img src={HomeIcon} alt="Home"/>
+                    </div>
+                    <div>Ukraine, Kryvyi Rih city, 50082</div>
+                </div>
+
+                <div className={s.InfoBlock}>
+                    <div className={s.icon}>
+                        <img className={s.Send} src={SendIcon} alt="Send" />
+                    </div>
+                    <div>Ukraine, Kryvyi Rih city, 50082</div>
+                </div>
+
+                <div className={s.InfoBlock}>
+                    <div className={s.icon}>
+                        <img className={s.Phone} src={PhoneCall} alt="Phone"/>
+                    </div>
+                    <div>Ukraine, Kryvyi Rih city, 50082</div>
+                </div>
+
+
+
             </div>
-
-
         </div>
+
+
+
     )
 }

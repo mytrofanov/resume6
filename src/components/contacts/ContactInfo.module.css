@@ -1,8 +1,21 @@
 .ContactInfo {
     display: flex;
+    flex-direction: column;
+
+}
+
+.InfoBlock {
+    display: flex;
     flex-direction: row;
+    width: 80%;
 }
 .icon {
-    background-color: #dc646f;
-    width: 15%;
+
+    width: 20%;
+}
+.Phone {
+    transform: rotate(90deg);
+}
+.Send {
+    transform: rotate(310deg);
 }
