@@ -12,21 +12,27 @@ export function ContactInfo() {
                     <div className={s.icon}>
                         <img src={HomeIcon} alt="Home"/>
                     </div>
-                    <div>Ukraine, Kryvyi Rih city, 50082</div>
+                    <div>
+                        <h3>Location</h3>
+                        Ukraine, Kryvyi Rih city, 50082
+                    </div>
                 </div>
 
                 <div className={s.InfoBlock}>
                     <div className={s.icon}>
                         <img className={s.Send} src={SendIcon} alt="Send" />
                     </div>
-                    <div>Ukraine, Kryvyi Rih city, 50082</div>
+                    <div><h3>Location</h3>
+                        Ukraine, Kryvyi Rih city, 50082</div>
                 </div>
 
                 <div className={s.InfoBlock}>
                     <div className={s.icon}>
                         <img className={s.Phone} src={PhoneCall} alt="Phone"/>
                     </div>
-                    <div>Ukraine, Kryvyi Rih city, 50082</div>
+                    <div>
+                        <h3>Location</h3>
+                        Ukraine, Kryvyi Rih city, 50082</div>
                 </div>
 
 
