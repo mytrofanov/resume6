@@ -1,7 +1,7 @@
 import s from './ContactInfo.module.css'
-import HomeIcon from '../../images/home_black_24dp.svg'
-import PhoneCall from '../../images/call_black_24dp.svg'
-import SendIcon from '../../images/send_black_24dp.svg'
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 
 export function ContactInfo() {
     return (
@@ -10,7 +10,10 @@ export function ContactInfo() {
 
                 <div className={s.InfoBlock}>
                     <div className={s.icon}>
-                        <img src={HomeIcon} alt="Home"/>
+                        <HomeOutlinedIcon
+                            sx={{
+                                fontSize: 40
+                            }}/>
                     </div>
                     <div>
                         <h3>Location</h3>
@@ -20,7 +23,12 @@ export function ContactInfo() {
 
                 <div className={s.InfoBlock}>
                     <div className={s.icon}>
-                        <img className={s.Send} src={SendIcon} alt="Send" />
+                        <SendOutlinedIcon
+                            sx={{
+                                fontSize: 40,
+                                transform: "rotate(310deg)"
+                            }}
+                        />
                     </div>
                     <div><h3>Location</h3>
                         Ukraine, Kryvyi Rih city, 50082</div>
@@ -28,7 +36,12 @@ export function ContactInfo() {
 
                 <div className={s.InfoBlock}>
                     <div className={s.icon}>
-                        <img className={s.Phone} src={PhoneCall} alt="Phone"/>
+                        <LocalPhoneOutlinedIcon
+                            sx={{
+                                fontSize: 40,
+                                transform: "rotate(90deg)"
+                            }}
+                        />
                     </div>
                     <div>
                         <h3>Location</h3>
