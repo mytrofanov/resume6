@@ -1,6 +1,8 @@
 .ContactInfo {
     display: flex;
     flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    margin-top: 15px;
 
 }
 
@@ -10,12 +12,12 @@
     width: 80%;
 }
 .icon {
-
+    padding-top: 30px;
     width: 20%;
 }
-.Phone {
-    transform: rotate(90deg);
+.InfoHeader {
+    font-size: 18px;
 }
-.Send {
-    transform: rotate(310deg);
+.InfoText {
+    font-size: 14px;
 }

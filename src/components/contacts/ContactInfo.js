@@ -12,12 +12,12 @@ export function ContactInfo() {
                     <div className={s.icon}>
                         <HomeOutlinedIcon
                             sx={{
-                                fontSize: 40
+                                fontSize: 45
                             }}/>
                     </div>
                     <div>
-                        <h3>Location</h3>
-                        Ukraine, Kryvyi Rih city, 50082
+                        <h3 className={s.InfoHeader}>Location</h3>
+                        <span className={s.InfoText}>Ukraine, Kryvyi Rih city, 50082 </span>
                     </div>
                 </div>
 
@@ -26,12 +26,13 @@ export function ContactInfo() {
                         <SendOutlinedIcon
                             sx={{
                                 fontSize: 40,
-                                transform: "rotate(310deg)"
-                            }}
-                        />
+                                transform: 'rotate(310deg)'
+                            }}/>
                     </div>
-                    <div><h3>Location</h3>
-                        Ukraine, Kryvyi Rih city, 50082</div>
+                    <div>
+                        <h3 className={s.InfoHeader}>Email</h3>
+                        <span className={s.InfoText}>MytrofanovMaxym@gmail.com </span>
+                    </div>
                 </div>
 
                 <div className={s.InfoBlock}>
@@ -39,20 +40,18 @@ export function ContactInfo() {
                         <LocalPhoneOutlinedIcon
                             sx={{
                                 fontSize: 40,
-                                transform: "rotate(90deg)"
-                            }}
-                        />
+                                transform: 'rotate(90deg)'
+                            }}/>
                     </div>
                     <div>
-                        <h3>Location</h3>
-                        Ukraine, Kryvyi Rih city, 50082</div>
+                        <h3 className={s.InfoHeader}>Phone Call</h3>
+                        <span className={s.InfoText}>+38 (067) 825 35 25 </span>
+                    </div>
                 </div>
-
 
 
             </div>
         </div>
-
 
 
     )
