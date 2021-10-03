@@ -27,7 +27,7 @@ export const MyWorks = [{
     id: 'VanillaJS',
     image: vanila,
     name: 'VanillaJS',
-    description: 'This project was made using only Vanilla Javascript and Git',
+    description: 'This project was made using only Vanilla Javascript, HTML5, CSS3 and Git',
     reference: 'https://mytrofanov.github.io/Tasks/'
 }
 ]
