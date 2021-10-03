@@ -3,7 +3,7 @@ import s from './Header.module.css'
 import {Box, createTheme} from "@material-ui/core";
 import {purple} from "@material-ui/core/colors";
 import {ThemeProvider} from "@emotion/react";
-import FormDialog from "../dialogs/Dialog";
+import Button from "@mui/material/Button";
 
 export const Header = () => {
     const ButtonTheme = createTheme({
@@ -31,12 +31,18 @@ export const Header = () => {
             <ThemeProvider theme={ButtonTheme}>
                 <Box sx={
                     {
-                        marginLeft: 47,
+                        marginLeft: 360,
                         marginTop: 5,
                         mb: 116
                     }
                 }>
-                    <FormDialog/>
+
+                    <Button
+                        sx={{textTransform: 'none' }}
+                        variant="contained" size="large"
+                        onClick={() => { alert('clicked') }}>
+                        Hire Me!
+                    </Button>
 
                 </Box>
             </ThemeProvider>
