@@ -1,0 +1,15 @@
+.Bread {
+    display: flex;
+    flex-direction: row;
+}
+.BreadPieces {
+    margin: 0 15px;
+
+}
+
+.BreadPiecesMid {
+    padding: 0 15px;
+    border-right: solid 1px gray;
+    border-left: solid 1px gray;
+
+}

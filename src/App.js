@@ -7,6 +7,7 @@ import {Portfolio} from "./components/portfolio/Portfolio";
 import {MyWorks} from "./components/portfolio/data";
 import FeedbackForm from "./components/feedback/FeedbackForm";
 import {ContactInfo} from "./components/contacts/ContactInfo";
+import {Bottom} from "./components/bottom/Bottom";
 
 export default function App() {
     return (
@@ -29,8 +30,11 @@ export default function App() {
                         <div className="contact">
                             <ContactInfo/>
                         </div>
-                    </div>
 
+                    </div>
+                    <div className="BottomOfBottom">
+                        <Bottom/>
+                    </div>
                 </div>
 
 
