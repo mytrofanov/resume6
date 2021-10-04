@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/mytrofanov.github.io/resume6/static/css/main.96a00832.chunk.css",
-    "main.js": "/mytrofanov.github.io/resume6/static/js/main.436ac969.chunk.js",
-    "main.js.map": "/mytrofanov.github.io/resume6/static/js/main.436ac969.chunk.js.map",
-    "runtime-main.js": "/mytrofanov.github.io/resume6/static/js/runtime-main.84c8d20c.js",
-    "runtime-main.js.map": "/mytrofanov.github.io/resume6/static/js/runtime-main.84c8d20c.js.map",
-    "static/js/2.75ad7e7e.chunk.js": "/mytrofanov.github.io/resume6/static/js/2.75ad7e7e.chunk.js",
-    "static/js/2.75ad7e7e.chunk.js.map": "/mytrofanov.github.io/resume6/static/js/2.75ad7e7e.chunk.js.map",
-    "index.html": "/mytrofanov.github.io/resume6/index.html",
-    "static/css/main.96a00832.chunk.css.map": "/mytrofanov.github.io/resume6/static/css/main.96a00832.chunk.css.map",
-    "static/js/2.75ad7e7e.chunk.js.LICENSE.txt": "/mytrofanov.github.io/resume6/static/js/2.75ad7e7e.chunk.js.LICENSE.txt",
-    "static/media/Cube.css": "/mytrofanov.github.io/resume6/static/media/wife.b3a625de.jpg",
-    "static/media/Header.module.css": "/mytrofanov.github.io/resume6/static/media/header.5e97b8e7.jpg",
-    "static/media/landing.45534472.jpg": "/mytrofanov.github.io/resume6/static/media/landing.45534472.jpg",
-    "static/media/Navbar.module.css": "/mytrofanov.github.io/resume6/static/media/portrait_cr.14e29d87.jpg",
-    "static/media/resume.da052445.jpg": "/mytrofanov.github.io/resume6/static/media/resume.da052445.jpg",
-    "static/media/samurai.0a868ea6.jpg": "/mytrofanov.github.io/resume6/static/media/samurai.0a868ea6.jpg",
-    "static/media/vanilaJS.888193fc.jpg": "/mytrofanov.github.io/resume6/static/media/vanilaJS.888193fc.jpg"
+    "main.css": "/resume6/static/css/main.5641229a.chunk.css",
+    "main.js": "/resume6/static/js/main.436ac969.chunk.js",
+    "main.js.map": "/resume6/static/js/main.436ac969.chunk.js.map",
+    "runtime-main.js": "/resume6/static/js/runtime-main.44434441.js",
+    "runtime-main.js.map": "/resume6/static/js/runtime-main.44434441.js.map",
+    "static/js/2.75ad7e7e.chunk.js": "/resume6/static/js/2.75ad7e7e.chunk.js",
+    "static/js/2.75ad7e7e.chunk.js.map": "/resume6/static/js/2.75ad7e7e.chunk.js.map",
+    "index.html": "/resume6/index.html",
+    "static/css/main.5641229a.chunk.css.map": "/resume6/static/css/main.5641229a.chunk.css.map",
+    "static/js/2.75ad7e7e.chunk.js.LICENSE.txt": "/resume6/static/js/2.75ad7e7e.chunk.js.LICENSE.txt",
+    "static/media/Cube.css": "/resume6/static/media/wife.b3a625de.jpg",
+    "static/media/Header.module.css": "/resume6/static/media/header.5e97b8e7.jpg",
+    "static/media/landing.45534472.jpg": "/resume6/static/media/landing.45534472.jpg",
+    "static/media/Navbar.module.css": "/resume6/static/media/portrait_cr.14e29d87.jpg",
+    "static/media/resume.da052445.jpg": "/resume6/static/media/resume.da052445.jpg",
+    "static/media/samurai.0a868ea6.jpg": "/resume6/static/media/samurai.0a868ea6.jpg",
+    "static/media/vanilaJS.888193fc.jpg": "/resume6/static/media/vanilaJS.888193fc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.84c8d20c.js",
+    "static/js/runtime-main.44434441.js",
     "static/js/2.75ad7e7e.chunk.js",
-    "static/css/main.96a00832.chunk.css",
+    "static/css/main.5641229a.chunk.css",
     "static/js/main.436ac969.chunk.js"
   ]
 }
