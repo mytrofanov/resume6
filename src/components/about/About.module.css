@@ -1,6 +1,6 @@
 .AboutAll {
     width: 100%;
-    padding-top: 65px;
+    padding-top: 20px;
     padding-left: 115px;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
 }
 /*Начало блока про опыт работы*/
 .WorkExperience {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     width: 100%;

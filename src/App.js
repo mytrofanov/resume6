@@ -20,7 +20,9 @@ import {Experience} from "./components/Experience";
 import {SkillPage} from "./components/SkillPage";
 
 
+
 export default function App() {
+
     return (
         <Router>
             <ScopedCssBaseline>
@@ -63,7 +65,7 @@ export default function App() {
 
                             </Switch>
                         </div>
-                        <Route path="/contact" component={ContactInfoAndForm}/>
+                        <Route path="/contact" component={ContactInfoAndForm }/>
 
                         <div className="BottomOfBottom">
                             <Bottom/>
