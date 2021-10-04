@@ -8,6 +8,7 @@ import {MyWorks} from "./components/portfolio/data";
 import FeedbackForm from "./components/feedback/FeedbackForm";
 import {ContactInfo} from "./components/contacts/ContactInfo";
 import {Bottom} from "./components/bottom/Bottom";
+import {About} from "./components/about/About";
 
 export default function App() {
     return (
@@ -20,12 +21,14 @@ export default function App() {
 
                     <Header/>
                     <div className="infoBlock">
-                        <Portfolio MyWorks={MyWorks}/>
+                        {/*<Portfolio MyWorks={MyWorks}/>*/}
+                        <About/>
+
                     </div>
 
-                    <div className="bottom">
+                    <div className="HomePageBottom">
                         <div className="feedback">
-                          <FeedbackForm />
+                            <FeedbackForm/>
                         </div>
                         <div className="contact">
                             <ContactInfo/>
@@ -36,7 +39,6 @@ export default function App() {
                         <Bottom/>
                     </div>
                 </div>
-
 
 
             </div>

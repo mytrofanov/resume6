@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: row;
-    height: 2376px;
+
     width: 1200px;
     margin: 0 auto;
     background-color: white;
@@ -17,11 +17,11 @@
 
 .infoBlock {
     width: 100%;
-    height: 1430px;
+
 
 }
 
-.bottom {
+.HomePageBottom {
     display: flex;
     flex-direction: row;
     margin-top: 15px;

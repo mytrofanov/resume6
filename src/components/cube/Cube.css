@@ -1,0 +1,104 @@
+/*Начала блока куб*/
+
+.cube {
+    color: #222;
+    font-size: 2em;
+    line-height: 1;
+    display: block;
+
+}
+
+
+.body1 {
+    perspective: 1000px;
+    perspective-origin: center -5em;
+
+}
+
+.side,
+.cube_container {
+    width: 10em;
+    height: 10em;
+
+}
+
+.cube_container {
+    border: 5px;
+    transform-style: preserve-3d;
+    animation: rotate 30s infinite linear;
+
+}
+
+.cube_container:before,
+.cube_container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border: 2px;
+
+}
+
+.cube_container:before {
+    transform: rotateX(90deg);
+}
+
+.cube_container:after {
+    transform: rotatey(90deg);
+
+}
+
+.side {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border: 2px solid white;
+
+
+}
+
+.back {
+    transform: translateZ(-5em);
+    background: url("../../images/cube/hunter.jpg") center;
+    background-size: cover;
+}
+
+.left {
+    transform: translateX(-5em) rotateY(90deg);
+    background: url("../../images/cube/family.JPG") center;
+    background-size: cover;
+}
+
+.right {
+    transform: translateX(5em) rotateY(90deg);
+    background: url("../../images/cube/wife.jpg") center;
+    background-size: cover;
+}
+
+.top {
+    transform: translateY(-5em) rotateX(90deg);
+    background: url("../../images/cube/family.JPG") center;
+    background-size: cover;
+}
+
+.bottom {
+    transform: translateY(5em) rotateX(90deg);
+    background: url("../../images/cube/bloger.JPG") center;
+    background-size: cover;
+}
+
+.front {
+    transform: translateZ(5em);
+    background: url("../../images/cube/portrait.jpg") center;
+    background-size: cover;
+
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/*Конец блока куб*/
