@@ -6,7 +6,7 @@ import {AlertMessage} from "../aletrMessage/AlertMessage";
 
 export default function FeedbackForm() {
 
-    const [AlertOpen, SetAlertOpen] = useState(true)
+    const [AlertOpen, SetAlertOpen] = useState(false)
     const {register, handleSubmit} = useForm();
     const onSubmit = () => {
         SetAlertOpen(true)
@@ -34,15 +34,17 @@ export default function FeedbackForm() {
                     />
                 </div>
                 <div>
-                        <textarea rows="10" cols="45" name="text"
-                                  placeholder="Message* " {...register("Message")}/>
-                    {/*<input className={s.message}  placeholder="Message*" {...register("Message")} />*/}
+                    {AlertOpen && <AlertMessage/>}
+                    {!AlertOpen &&  <textarea rows="10" cols="45" name="text"
+                                              placeholder="Message* " {...register("Message")}/> }
+
+
                 </div>
 
                 <input type="submit" value="Hire Me!"/>
             </form>
 
-            {AlertOpen && <AlertMessage/>}
+            {!AlertOpen && <AlertMessage/>}
 
         </div>
 
