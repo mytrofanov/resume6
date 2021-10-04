@@ -4,8 +4,15 @@ import {Box, createTheme} from "@material-ui/core";
 import {purple} from "@material-ui/core/colors";
 import {ThemeProvider} from "@emotion/react";
 import Button from "@mui/material/Button";
+import {NavLink} from "react-router-dom";
+
+
+
 
 export const Header = () => {
+
+
+
     const ButtonTheme = createTheme({
         palette: {
             primary: {
@@ -40,8 +47,10 @@ export const Header = () => {
                     <Button
                         sx={{textTransform: 'none' }}
                         variant="contained" size="large"
-                        onClick={() => { alert('clicked') }}>
-                        Hire Me!
+                        // onClick={ }
+                    >
+                        <NavLink to="/contact"  className={s.HireMeButton}>Hire Me!</NavLink>
+
                     </Button>
 
                 </Box>

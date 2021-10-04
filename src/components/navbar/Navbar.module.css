@@ -9,7 +9,7 @@
     text-decoration: none;
     color: #a6a6a9;
 }
-.ActiveLink {
+.navbar a.ActiveLink {
     color: white;
 }
 

@@ -5,16 +5,19 @@ import {Navbar} from "./components/navbar/Navbar";
 import {Header} from "./components/header/Header";
 import {Portfolio} from "./components/portfolio/Portfolio";
 import {MyWorks} from "./components/portfolio/data";
-import FeedbackForm from "./components/feedback/FeedbackForm";
-import {ContactInfo} from "./components/contacts/ContactInfo";
 import {Bottom} from "./components/bottom/Bottom";
 import {About} from "./components/about/About";
+import {Home} from "./components/Home"
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Redirect
 } from "react-router-dom";
+import {ContactInfoAndForm} from "./components/contacts/ContactInfoAndForm";
+import {Education} from "./components/Education";
+import {Experience} from "./components/Experience";
+import {SkillPage} from "./components/SkillPage";
 
 
 export default function App() {
@@ -30,30 +33,38 @@ export default function App() {
                         <Header/>
                         <div className="infoBlock">
                             <Switch>
-                                <Route exact path='/' render={()=> <Redirect to={"/about"}/>}/>
+                                <Route exact path='/' render={() => <Redirect to={"/home"}/>}/>
+
+                                <Route path="/home" component={Home}/>
 
                                 <Route path="/portfolio">
                                     <Portfolio MyWorks={MyWorks}/>
+                                    <ContactInfoAndForm/>
                                 </Route>
-                                <Route path="/about">
 
-                                    <About/>
+                                <Route path="/about" component={About}/>
 
+                                <Route path="/education" >
+                                <Education/>
+                                <ContactInfoAndForm/>
                                 </Route>
+
+                              <Route path="/experience" >
+                                <Experience/>
+                                <ContactInfoAndForm/>
+                                </Route>
+
+                                <Route path="/skills" >
+                                <SkillPage/>
+                                <ContactInfoAndForm/>
+                                </Route>
+
 
 
                             </Switch>
                         </div>
+                        <Route path="/contact" component={ContactInfoAndForm}/>
 
-                        <div className="HomePageBottom">
-                            <div className="feedback">
-                                <FeedbackForm/>
-                            </div>
-                            <div className="contact">
-                                <ContactInfo/>
-                            </div>
-
-                        </div>
                         <div className="BottomOfBottom">
                             <Bottom/>
                         </div>

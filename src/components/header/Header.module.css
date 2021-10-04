@@ -29,3 +29,7 @@
     height: 44px;
     margin: 15px auto;
 }
+.HireMeButton {
+    text-decoration: none;
+    color: white;
+}
