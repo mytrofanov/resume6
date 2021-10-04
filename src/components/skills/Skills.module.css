@@ -1,0 +1,7 @@
+.PercentPadding {
+    padding-left: 10px;
+}
+.SkillMaterialSlider {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,5 +1,7 @@
 import s from './About.module.css'
 import {Cube} from "../cube/Cube";
+import Skills from "../skills/Skills";
+
 
 export function About() {
     let now = new Date(); //Текущая дата
@@ -142,9 +144,27 @@ export function About() {
                     <div className={s.Divider}/>
                     {/*Линия подчеркивания*/}
                 </div>
-            <div className={s.SkillsSlider}>
-            Slider
-            </div>
+
+                <div className={s.SkillsCol}>
+
+                    <div className={s.SkillsSlider}>
+                        Javascript
+                        <Skills percent={80}/>
+                        React+Redux
+                        <Skills percent={75}/>
+                        TypeScript
+                        <Skills percent={70}/>
+                    </div>
+
+                    <div className={s.SkillsSlider}>
+                        HTML5/CSS3
+                        <Skills percent={90}/>
+                        Version Control/Git
+                        <Skills percent={95}/>
+                        Testing and debugging
+                        <Skills percent={40}/>
+                    </div>
+                </div>
 
 
             </div>
