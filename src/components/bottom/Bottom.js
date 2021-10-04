@@ -7,23 +7,31 @@ export function Bottom() {
     return (
         <div className={s.Bread}>
             <div className={s.BreadPieces}>
-            <FacebookIcon
-                sx={{fontSize: 30,
-                         }}
-            />
+                <a rel="nofollow" target="_blank" href="https://www.facebook.com/profile.php?id=100005637646093">
+                    <FacebookIcon
+                        sx={{
+                            fontSize: 30,
+                        }}
+                    />
+                </a>
             </div>
             <div className={s.BreadPiecesMid}>
-            <InstagramIcon
-                sx={{
-                    fontSize: 30,
+                <a rel="nofollow" target="_blank" href="https://www.instagram.com/mytrofanovmaxym/?hl=ru">
+                <InstagramIcon
+                    sx={{
+                        fontSize: 30,
                     }}
-            />
+                />
+                </a>
             </div>
             <div className={s.BreadPieces}>
-            <LinkedInIcon
-                sx={{fontSize: 30
-                }}
-            />
+                <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/maksym-mytrofanov-967365215/">
+                <LinkedInIcon
+                    sx={{
+                        fontSize: 30
+                    }}
+                />
+                </a>
             </div>
         </div>
     )

@@ -4,12 +4,17 @@
 }
 .BreadPieces {
     margin: 0 15px;
-
+}
+.BreadPieces a {
+   text-decoration: none;
+    color: black;
 }
 
-.BreadPiecesMid {
+
+
+.BreadPiecesMid a {
     padding: 0 15px;
     border-right: solid 1px gray;
     border-left: solid 1px gray;
-
+    color: black;
 }
