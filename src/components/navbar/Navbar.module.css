@@ -5,6 +5,13 @@
     height: 100%;
     background-color: #383843;
 }
+.navbar a {
+    text-decoration: none;
+    color: #a6a6a9;
+}
+.ActiveLink {
+    color: white;
+}
 
 .navi_list {
     padding-left: 30px;
@@ -41,3 +48,4 @@
     text-align: center;
     margin: 0 auto 15px;
 }
+
