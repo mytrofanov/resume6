@@ -1,12 +1,13 @@
 import samurai from './samurai.jpg'
 import landing from '../../images/landing.jpg'
 import vanila from '../../images/vanilaJS.jpg'
+import resume from '../../images/resume.jpg'
 
 
 
 export const MyWorks = [{
     id: 'Resume',
-    image: samurai,
+    image: resume,
     name: 'Resume',
     description: 'This site was made using HTML5, CSS3, React, JavaScript, Material UI, react-hook-form, Git',
     reference: 'https://mytrofanov.github.io/second/#/profile'
