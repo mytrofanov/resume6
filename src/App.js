@@ -11,7 +11,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect, HashRouter, withRouter
+    Redirect, HashRouter, withRouter, BrowserRouter
 } from "react-router-dom";
 import {ContactInfoAndForm} from "./components/contacts/ContactInfoAndForm";
 import {Education} from "./components/Education";
@@ -24,6 +24,7 @@ import {SkillPage} from "./components/SkillPage";
 export default function App() {
 
     return (
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <HashRouter>
             <withRouter>
         <Router>
@@ -81,6 +82,7 @@ export default function App() {
         </Router>
             </withRouter>
         </HashRouter>
+        </BrowserRouter>
     )
 }
 
