@@ -21,7 +21,7 @@
 }
 
 .CardContent {
-    height: 450px;
+    /*height: 450px;*/
     opacity: 80%;
 }
 .CardContent:hover {

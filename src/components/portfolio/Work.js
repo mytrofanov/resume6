@@ -1,19 +1,19 @@
 import React from 'react'
 import {Card, Grid, CardMedia, CardContent, Typography, CardActions} from "@material-ui/core";
 import Button from "@mui/material/Button";
-import s from './Portfolio.module.css'
 
 export const Work = (props) => {
     const ref = props.reference
     return (
+
         <Grid item xs={12} md={6}>
-            <Card  className={s.CardContent}>
+            <Card >
                 <CardMedia
-                    src={props.image}
+                    image={props.image}
                     component="img"
                     title={props.id}
-
-                    id={props.image} alt={props.id}/>
+                    alt={props.id}
+                    id={props.image}/>
                 <CardContent >
                     <Typography variant="h5"
                     component="h3">{props.name}</Typography>
@@ -26,10 +26,11 @@ export const Work = (props) => {
                         variant="contained"
                         value="<?php the_field('Открыть проект');?>"
                         onClick={()=>{window.open(ref)}}
-                         >Открыть проект</Button>
+                         >Open project</Button>
                     </CardActions>
                 </CardContent>
             </Card>
         </Grid>
+
     )
 }

@@ -37,7 +37,7 @@ export default function App() {
                         <Header/>
                         <div className="infoBlock">
                             <Switch>
-                                <Route exact path='/' render={() => <Redirect to={'/home'}/>}/>
+
 
                                 <Route path='/home' component={Home}/>
 
@@ -68,6 +68,7 @@ export default function App() {
                             </Switch>
                         </div>
                         <Route path='/contact' component={ContactInfoAndForm }/>
+                        <Route  path='/' render={() => <Redirect to={'/home'}/>}/>
 
                         <div className="BottomOfBottom">
                             <Bottom/>
