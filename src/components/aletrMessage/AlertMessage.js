@@ -10,7 +10,7 @@ export const AlertMessage = () => {
         <Stack sx={{width: '100%'}} spacing={2}>
             <Alert severity="success" variant="filled">
                 <AlertTitle>This form doesn't work on GitHUB</AlertTitle>
-                Please contact me on e-mail:<strong>MytrofanovMaxym@gmail.com</strong>
+                 Please contact me on e-mail:<strong>MytrofanovMaxym@gmail.com</strong>
             </Alert>
         </Stack>
     );
