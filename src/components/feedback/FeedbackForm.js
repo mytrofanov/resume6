@@ -4,6 +4,7 @@ import "./Feedback.module.css";
 import {AlertMessage} from "../aletrMessage/AlertMessage";
 
 
+
 export default function FeedbackForm() {
 
     const [AlertOpen, SetAlertOpen] = useState(false)
@@ -19,15 +20,15 @@ export default function FeedbackForm() {
     return (
 
         <div className="form">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form action="mail.php" method="POST" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label htmlFor="Leave a Message">Leave a Message</label>
-                    <input className="name" id="InputName" placeholder="Name*" {...register("Name")} />
+                    <input name="user_name" className="name" id="InputName" placeholder="Name*" {...register("Name")} />
                 </div>
 
                 <div>
 
-                    <input className="email" id="email"
+                    <input className="email" id="email" name="user_email"
                            placeholder="example@gmail.com*"
                            type="email"
                            {...register("email")}
@@ -35,7 +36,7 @@ export default function FeedbackForm() {
                 </div>
                 <div>
                     {AlertOpen && <AlertMessage/>}
-                    {!AlertOpen &&  <textarea rows="10" cols="45" name="text"
+                    {!AlertOpen &&  <textarea  rows="10" cols="45" name="text"
                                               placeholder="Message* " {...register("Message")}/> }
 
 

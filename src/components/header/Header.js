@@ -31,7 +31,7 @@ export const Header = () => {
             <div id="header_title" className={s.header_title}>
                 Lets Make Something Great
                 <div className={s.header_annotation} id="header_annotation">
-                    I’m an UI designer that prides ourself on being strategic brand partners and awesome
+                    I’m  Front End Developer that prides ourself on being strategic brand partners and awesome
                     product providers
                 </div>
             </div>
