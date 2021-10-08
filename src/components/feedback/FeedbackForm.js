@@ -35,10 +35,10 @@ export default function FeedbackForm() {
                     />
                 </div>
                 <div>
-                    {AlertOpen && <AlertMessage/>}
-                    {!AlertOpen &&  <textarea  rows="10" cols="45" name="text"
-                                              placeholder="Message* " {...register("Message")}/> }
 
+                    <textarea  rows="10" cols="45" name="text"
+                                              placeholder="Message* " {...register("Message")}/>
+                    {AlertOpen && <AlertMessage/>}
 
                 </div>
 
