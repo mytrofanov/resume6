@@ -15,20 +15,20 @@ export default function FeedbackForm() {
     const {register, handleSubmit} = useForm();
     const onSubmit = (textFromForm) => {
       let FormData = {
-          'name': textFromForm.Name,
-          'email': textFromForm.email,
-          'message': textFromForm.Message
+          user_name: textFromForm.Name,
+          user_email: textFromForm.email,
+          text: textFromForm.Message
       }
-        axios.post('http://mytrofanov.guru/mail.php',
-            {
-                'user_name': FormData.name,
-                'user_email': FormData.email,
-                'text': FormData.message
-            })
+        const str = JSON.stringify(FormData)
+        axios.post('http://mytrofanov.guru/mail.php', str, {
+            headers: {'Content-Type':'application/json'}
+            }
+            )
             .then(response => console.log(response))
             .then(response => setSuscessFormSend(true))
             .catch(error => console.log(error))
             .catch(error => setErrorText(error))
+
 
     };
 
