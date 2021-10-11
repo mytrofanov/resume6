@@ -3,58 +3,70 @@ import {useForm} from "react-hook-form";
 import "./Feedback.module.css";
 import {AlertMessage} from "../aletrMessage/AlertMessage";
 import {ErrorAlertMessage} from "../aletrMessage/ErrorAlertMessage";
-import {SendMeEmail, SendMyEmail} from "./mailer";
-const mail = require('./mailer')();
+import axios from "axios";
 
 
 export default function FeedbackForm() {
 
-    const [SendSucces, SetSendSucces] = useState(false)
-    const [ErrorSend, SetErrorSend] = useState(false)
-    const [ErrorStatus, SetErrorStatus] = useState()
-    const [textFromForm, setTextFromForm] = useState()
+
+    const [errorText, setErrorText] = useState()
+    const [sucsess, setSuscessFormSend] = useState(false)
 
     const {register, handleSubmit} = useForm();
     const onSubmit = (textFromForm) => {
-        SendMyEmail()
-        mail.send();
+      let FormData = {
+          'name': textFromForm.Name,
+          'email': textFromForm.email,
+          'message': textFromForm.Message
+      }
+        axios.post('http://mytrofanov.guru/mail.php',
+            {
+                'user_name': FormData.name,
+                'user_email': FormData.email,
+                'text': FormData.message
+            })
+            .then(response => console.log(response))
+            .then(response => setSuscessFormSend(true))
+            .catch(error => console.log(error))
+            .catch(error => setErrorText(error))
+
     };
 
+    // http://mytrofanov.guru/mail.php
 
 
+    return (
 
-        return (
+        <div className="form">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div>
+                    <label htmlFor="Leave a Message">Leave a Message</label>
+                    <input name="user_name" className="name" id="InputName"
+                           placeholder="Name*" {...register("Name")} />
+                </div>
 
-            <div className="form">
-                <form   onSubmit={handleSubmit(onSubmit)}>
-                    <div>
-                        <label htmlFor="Leave a Message">Leave a Message</label>
-                        <input name="user_name" className="name" id="InputName"
-                               placeholder="Name*" {...register("Name")} />
-                    </div>
+                <div>
 
-                    <div>
-
-                        <input className="email" id="email" name="user_email"
-                               placeholder="example@gmail.com*"
-                               type="email"
-                               {...register("email")}
-                        />
-                    </div>
-                    <div>
+                    <input className="email" id="email" name="user_email"
+                           placeholder="example@gmail.com*"
+                           type="email"
+                           {...register("email")}
+                    />
+                </div>
+                <div>
 
                     <textarea rows="10" cols="45" name="text"
                               placeholder="Message* " {...register("Message")}/>
-                        {SendSucces && <AlertMessage/>}
-                        {ErrorSend && <ErrorAlertMessage ErrorStatus={ErrorStatus}/>}
-                    </div>
+                    {sucsess && <AlertMessage/>}
+                    {errorText && <ErrorAlertMessage errorText={errorText}/>}
+                </div>
 
-                    <input type="submit" value="Hire Me!"/>
-                </form>
-
-
-            </div>
+                <input type="submit" value="Hire Me!"/>
+            </form>
 
 
-        );
-    }
+        </div>
+
+
+    );
+}
