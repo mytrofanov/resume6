@@ -14,15 +14,14 @@ export default function FeedbackForm() {
 
     const {register, handleSubmit} = useForm();
     const onSubmit = (textFromForm) => {
-      let FormData = {
-          user_name: textFromForm.Name,
-          user_email: textFromForm.email,
-          text: textFromForm.Message
-      }
-        const str = JSON.stringify(FormData)
-        axios.post('http://mytrofanov.guru/mail.php', str, {
-            headers: {'Content-Type':'application/json'}
-            }
+       // mail.php can't receive object, so have to use next:
+        const params = new URLSearchParams();
+        params.append('user_name', textFromForm.Name);
+        params.append('user_email', textFromForm.email);
+        params.append('text', textFromForm.Message);
+
+
+        axios.post('http://mytrofanov.guru/mail.php', params
             )
             .then(response => console.log(response))
             .then(response => setSuscessFormSend(true))
