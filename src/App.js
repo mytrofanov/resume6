@@ -25,7 +25,7 @@ export default function App() {
 
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <HashRouter>
+
             <withRouter>
         <Router>
             <ScopedCssBaseline>
@@ -81,7 +81,7 @@ export default function App() {
             </ScopedCssBaseline>
         </Router>
             </withRouter>
-        </HashRouter>
+
         </BrowserRouter>
     )
 }
