@@ -11,75 +11,76 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect, HashRouter, withRouter, BrowserRouter
+    Redirect, withRouter, BrowserRouter
 } from "react-router-dom";
 import {ContactInfoAndForm} from "./components/contacts/ContactInfoAndForm";
 import {Education} from "./components/Education";
 import {Experience} from "./components/Experience";
 import {SkillPage} from "./components/SkillPage";
-
-
+import {useState} from "react";
 
 
 export default function App() {
+    let [defaultEnglish, setDefaultEnglish] = useState(true)
+
+
 
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
 
             <withRouter>
-        <Router>
-            <ScopedCssBaseline>
-                <div className="container">
+                <Router>
+                    <ScopedCssBaseline>
+                        <div className="container">
 
-                    <Navbar/>
+                            <Navbar/>
 
-                    <div className="right_column" id="right_column">
+                            <div className="right_column" id="right_column">
 
-                        <Header/>
-                        <div className="infoBlock">
-                            <Switch>
-
-
-                                <Route path='/home' component={Home}/>
-
-                                <Route path='/portfolio'>
-                                    <Portfolio />
-                                    <ContactInfoAndForm/>
-                                </Route>
-
-                                <Route path='/about' component={About}/>
-
-                                <Route path='/education' >
-                                <Education/>
-                                <ContactInfoAndForm/>
-                                </Route>
-
-                              <Route path='/experience' >
-                                <Experience/>
-                                <ContactInfoAndForm/>
-                                </Route>
-
-                                <Route path='/skills' >
-                                <SkillPage/>
-                                <ContactInfoAndForm/>
-                                </Route>
+                                <Header defaultEnglish={defaultEnglish}  setdefaultEnglish={setDefaultEnglish}/>
+                                <div className="infoBlock">
+                                    <Switch>
 
 
+                                        <Route path='/home' component={Home}/>
 
-                            </Switch>
+                                        <Route path='/portfolio'>
+                                            <Portfolio/>
+                                            <ContactInfoAndForm/>
+                                        </Route>
+
+                                        <Route path='/about' component={About}/>
+
+                                        <Route path='/education'>
+                                            <Education/>
+                                            <ContactInfoAndForm/>
+                                        </Route>
+
+                                        <Route path='/experience'>
+                                            <Experience/>
+                                            <ContactInfoAndForm/>
+                                        </Route>
+
+                                        <Route path='/skills'>
+                                            <SkillPage/>
+                                            <ContactInfoAndForm/>
+                                        </Route>
+
+
+                                    </Switch>
+                                </div>
+                                <Route path='/contact' component={ContactInfoAndForm}/>
+                                <Route path='/' render={() => <Redirect to={'/home'}/>}/>
+
+                                <div className="BottomOfBottom">
+                                    <Bottom/>
+                                </div>
+                            </div>
+
+
                         </div>
-                        <Route path='/contact' component={ContactInfoAndForm }/>
-                        <Route  path='/' render={() => <Redirect to={'/home'}/>}/>
-
-                        <div className="BottomOfBottom">
-                            <Bottom/>
-                        </div>
-                    </div>
-
-
-                </div>
-            </ScopedCssBaseline>
-        </Router>
+                    </ScopedCssBaseline>
+                </Router>
             </withRouter>
 
         </BrowserRouter>

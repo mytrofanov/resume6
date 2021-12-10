@@ -5,14 +5,16 @@
     background: url('/src/images/header.jpg') center no-repeat;
     background-size: cover;
 }
-
+.RusEngButtons {
+  margin-left: 85%;
+}
 .header_title {
     font-family: "Raleway", sans-serif;
     color: #ffffff;
     font-size: 46px;
     font-weight: bold;
     width: 632px;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 121px;
 }
 
