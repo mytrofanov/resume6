@@ -22,6 +22,7 @@ export const Portfolio = () => {
                           name={item.name}
                           description={item.description}
                           reference={item.reference}
+                          git={item.git}
                           print={'This is work props ====================='}
                     />
                 )

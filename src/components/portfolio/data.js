@@ -11,24 +11,28 @@ export const MyWorks = [{
     name: 'The social-network website',
     description: 'This Social Network was build using React, Redux, JavaScript, TypeScript, CSS, Ajax, API, ' +
         'cookie, react-hook-form, Git',
-    reference: 'https://mytrofanov.github.io/second/#/profile'
+    reference: 'https://mytrofanov.github.io/second/#/profile',
+    git:'https://github.com/mytrofanov/second'
 },{
     id: 'Landing Page',
     image: landing,
     name: 'Landing Page',
     description: 'This Landing Page was made using HTML5, CSS3, JavaScript, Git',
-    reference: 'https://mytrofanov.github.io/wpd/index.html#'
+    reference: 'https://mytrofanov.github.io/wpd/index.html#',
+    git:'https://github.com/mytrofanov/wpd'
 },{
     id: 'VanillaJS',
     image: vanila,
     name: 'VanillaJS',
     description: 'This project was made using only Vanilla Javascript, HTML5, CSS3 and Git',
-    reference: 'https://mytrofanov.github.io/Tasks/'
+    reference: 'https://mytrofanov.github.io/Tasks/',
+    git: 'https://github.com/mytrofanov/Tasks/'
 },{
     id: 'Resume',
     image: resume,
     name: 'Resume',
     description: 'This site was made using HTML5, CSS3, React, JavaScript, Material UI, react-hook-form, Git',
-    reference: 'http://mytrofanov.guru'
+    reference: 'http://mytrofanov.guru',
+    git: 'https://github.com/mytrofanov/resume6'
 }
 ]

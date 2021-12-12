@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 
 export const Work = (props) => {
     const ref = props.reference
+    const git = props.git
     return (
 
         <Grid item xs={12} md={6}>
@@ -22,11 +23,17 @@ export const Work = (props) => {
                     >{props.description}</Typography>
                     <CardActions>
                     <Button
-
+                        coor="primary"
                         variant="contained"
                         value="<?php the_field('Открыть проект');?>"
                         onClick={()=>{window.open(ref)}}
-                         >Open project</Button>
+                         >WWW</Button>
+                        <Button
+                            color="secondary"
+                            variant="contained"
+                            value="<?php the_field('Открыть проект');?>"
+                            onClick={()=>{window.open(git)}}
+                        >GitHub</Button>
                     </CardActions>
                 </CardContent>
             </Card>
