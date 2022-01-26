@@ -11,7 +11,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect, HashRouter, withRouter, BrowserRouter
+    Redirect, withRouter, BrowserRouter
 } from "react-router-dom";
 import {ContactInfoAndForm} from "./components/contacts/ContactInfoAndForm";
 import {Education} from "./components/Education";
@@ -30,30 +30,22 @@ export default function App() {
         <Router>
             <ScopedCssBaseline>
                 <div className="container">
-
                     <Navbar/>
-
                     <div className="right_column" id="right_column">
-
                         <Header/>
                         <div className="infoBlock">
                             <Switch>
-
-
                                 <Route path='/home' component={Home}/>
-
                                 <Route path='/portfolio'>
                                     <Portfolio />
                                     <ContactInfoAndForm/>
                                 </Route>
 
                                 <Route path='/about' component={About}/>
-
                                 <Route path='/education' >
                                 <Education/>
                                 <ContactInfoAndForm/>
                                 </Route>
-
                               <Route path='/experience' >
                                 <Experience/>
                                 <ContactInfoAndForm/>
@@ -63,13 +55,10 @@ export default function App() {
                                 <SkillPage/>
                                 <ContactInfoAndForm/>
                                 </Route>
-
-
-
                             </Switch>
                         </div>
                         <Route path='/contact' component={ContactInfoAndForm }/>
-                        <Route  path='/' render={() => <Redirect to={'/home'}/>}/>
+                        <Route  path='/' render={() => <Redirect to={'/portfolio'}/>}/>
 
                         <div className="BottomOfBottom">
                             <Bottom/>

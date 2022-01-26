@@ -19,6 +19,10 @@ export const SkillPage = () => {
                       <Skills percent={80}/>
                       React+Redux
                       <Skills percent={75}/>
+                      MobX
+                      <Skills percent={90}/>
+                      NodeJs
+                      <Skills percent={65}/>
                       TypeScript
                       <Skills percent={70}/>
                   </div>
@@ -26,10 +30,14 @@ export const SkillPage = () => {
                   <div className={s.SkillsSlider}>
                       HTML5/CSS3
                       <Skills percent={90}/>
+                      Bootstrap
+                      <Skills percent={90}/>
                       Version Control/Git
                       <Skills percent={95}/>
                       Testing and debugging
                       <Skills percent={40}/>
+                      PostgreSQL
+                      <Skills percent={60}/>
                   </div>
               </div>
 

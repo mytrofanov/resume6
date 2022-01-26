@@ -10,6 +10,15 @@ export const Experience = () => {
                 {/*Линия подчеркивания*/}
 
                 <div className={s.BlackBlock}>
+                    <div className={s.BlackBlockHeader}>2022 jan -till now --- Junior Front End Developer ---</div>
+                    <div className={s.BlackBlockText}>
+                        Made Pet-project (Backend & FrontEnd) with  React, NodeJs, MobX, React Bootstrap,
+                        PostgreSQL,Sequelize, axios, react-hooks, etc.
+                        <div>see portfolio ... </div>
+                    </div>
+
+                </div>
+                <div className={s.BlackBlock}>
                     <div className={s.BlackBlockHeader}>2020-till now --- Front End Developer ---</div>
                     <div className={s.BlackBlockText}>
                         I've started to learn Development from November 2020. Now I can show

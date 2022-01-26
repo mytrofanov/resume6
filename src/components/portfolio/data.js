@@ -2,10 +2,19 @@ import samurai from './samurai.jpg'
 import landing from '../../images/landing.jpg'
 import vanila from '../../images/vanilaJS.jpg'
 import resume from '../../images/resume.jpg'
-
+import niceDevice from '../../images/niceDevice.jpg'
 
 
 export const MyWorks = [
+    {
+        id: 'Online Shop',
+        image: niceDevice,
+        name: 'Online Shop',
+        description: 'Pet-project (Backend & FrontEnd) was made using:  React, NodeJs, MobX, React Bootstrap, ' +
+            'PostgreSQL,Sequelize, axios, react-hooks, etc.',
+        reference: 'http://nicedevice.top/',
+        git:'https://github.com/mytrofanov/online-store'
+    },
     {
         id: 'Social Network',
         image: samurai,

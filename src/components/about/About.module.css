@@ -75,6 +75,8 @@
 /*===============Skills===============*/
 .Skills {
     margin-top : 50px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     flex-direction: column;
     width: 100%;
