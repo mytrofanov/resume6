@@ -21,7 +21,7 @@ export default function FeedbackForm() {
         params.append('text', textFromForm.Message);
 
 
-        axios.post('http://mytrofanov.guru/mail.php', params
+        axios.post('https://mytrofanov.guru/mail.php', params
             )
             .then(response => console.log(response))
             .then(response => setSuscessFormSend(true))
