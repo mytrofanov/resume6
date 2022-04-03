@@ -5,6 +5,10 @@
     background: url('/src/images/header.jpg') center no-repeat;
     background-size: cover;
 }
+.flagOfUkraine{
+    background: url('/src/images/ukraine.svg') right no-repeat;
+    height: 10%;
+}
 
 .header_title {
     font-family: "Raleway", sans-serif;
@@ -12,21 +16,22 @@
     font-size: 46px;
     font-weight: bold;
     width: 632px;
-    margin-top: 70px;
+    margin-top: 2%;
     margin-left: 121px;
 }
 
 .header_annotation {
     font-family: "Raleway", sans-serif;
     color: #c6c6c6;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: normal;
     text-align: center;
-    line-height: 1.7;
+    line-height: 1.6;
     width: 531px;
     height: 44px;
     margin: 15px auto;
 }
 .animatedHireMe {
     margin-left: 35%;
+    margin-top: 3%;
 }

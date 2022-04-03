@@ -10,12 +10,13 @@ export const Header = () => {
     return (
 
         <div className={s.header} id="header">
-
+            <div className={s.flagOfUkraine}/>
             <div id="header_title" className={s.header_title}>
                 Lets Make Something Great
                 <div className={s.header_annotation} id="header_annotation">
-                    I’m  Front End Developer that prides ourself on being strategic brand partners and awesome
-                    product providers
+                    A free people ought not only be armed and disciplined,
+                    but they should have sufficient arms and ammunition to maintain a status
+                    of independence from any who might attempt to abuse them
                 </div>
             </div>
             <div className={s.animatedHireMe}>
