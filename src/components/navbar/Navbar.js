@@ -6,30 +6,33 @@ import ScalingExperienceAnimatedButton from "../animated/animatedButton/workExpe
 import ScalingSkillsAnimatedButton from "../animated/animatedButton/skillsAnimatedButton";
 import ScalingPortfolioAnimatedButton from "../animated/animatedButton/portfolioAnimatedButton";
 import ScalingContactsAnimatedButton from "../animated/animatedButton/contactsAnimatedButton";
+import AnimatedPict from "../animated/animatedPict/animatedPict";
 
 
 export const Navbar = () => {
 
-        return (
+    return (
         <div>
             <div className={s.navbar}>
 
                 {/*<img alt="Mytrofanov Maxym" src={portrait} id="portrait" className={s.portrait}/>*/}
 
                 <div className={s.portraitSubscription}>
-                    <span className={s.portraitSubscriptionName}>
-                        Mytrofanov Maxym Front-end Developer
-                    </span>
+                    {/*<span className={s.portraitSubscriptionName}>*/}
+                    {/*    Mytrofanov Maxym Front-end Developer*/}
+                    {/*</span>*/}
+                    <AnimatedPict/>
+
                 </div>
-                <div id="navi_list" className={s.navi_list} >
+                <div id="navi_list" className={s.navi_list}>
                     <div>
-                        <li id="Home" >
-                          <ScalingHomeAnimatedButton/>
+                        <li id="Home">
+                            <ScalingHomeAnimatedButton/>
                         </li>
                     </div>
 
                     <li id="Education">
-                       <ScalingEducationAnimatedButton/>
+                        <ScalingEducationAnimatedButton/>
                     </li>
                     <li id="Experience">
                         <ScalingExperienceAnimatedButton/>
@@ -39,10 +42,10 @@ export const Navbar = () => {
                     </li>
                     <li id="Portfolio">
                         <ScalingPortfolioAnimatedButton/>
-                        </li>
+                    </li>
                     <li id="Contacts">
                         <ScalingContactsAnimatedButton/>
-                        </li>
+                    </li>
 
                 </div>
             </div>

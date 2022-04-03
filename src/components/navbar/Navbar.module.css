@@ -37,15 +37,13 @@
 
     width: 100%;
     height: 275px;
-    background: url('/src/images/portrait_cr.jpg') center no-repeat;
+    /*background: url('/src/images/portrait_cr.jpg') center no-repeat;*/
     background-size: contain;
-
-
 }
 
-.portraitSubscriptionName {
-    width: 200px;
-    text-align: center;
-    margin: 0 auto 15px;
-}
+/*.portraitSubscriptionName {*/
+/*    width: 200px;*/
+/*    text-align: center;*/
+/*    margin: 0 auto 15px;*/
+/*}*/
 
