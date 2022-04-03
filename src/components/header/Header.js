@@ -1,28 +1,11 @@
 import React from 'react'
 import s from './Header.module.css'
-import {Box, createTheme} from "@material-ui/core";
-import {purple} from "@material-ui/core/colors";
-import {ThemeProvider} from "@emotion/react";
-import Button from "@mui/material/Button";
-import {NavLink} from "react-router-dom";
+import ScalingHireMeAnimatedButton from "../animated/animatedButton/scalingHireMeAnimatedButton";
 
 
 
 
 export const Header = () => {
-
-
-
-    const ButtonTheme = createTheme({
-        palette: {
-            primary: {
-                main: purple[500],
-            },
-            secondary: {
-                main: '#f44336',
-            },
-        },
-    });
 
     return (
 
@@ -35,26 +18,9 @@ export const Header = () => {
                     product providers
                 </div>
             </div>
-            <ThemeProvider theme={ButtonTheme}>
-                <Box sx={
-                    {
-                        marginLeft: 360,
-                        marginTop: 5,
-                        mb: 116
-                    }
-                }>
-
-                    <Button
-                        sx={{textTransform: 'none' }}
-                        variant="contained" size="large"
-                        // onClick={ }
-                    >
-                        <NavLink to="/contact"  className={s.HireMeButton}>Hire Me!</NavLink>
-
-                    </Button>
-
-                </Box>
-            </ThemeProvider>
+            <div className={s.animatedHireMe}>
+                <ScalingHireMeAnimatedButton  />
+            </div>
 
         </div>
 
