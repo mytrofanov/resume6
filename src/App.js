@@ -10,7 +10,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect, withRouter, BrowserRouter
+    Redirect, BrowserRouter
 } from "react-router-dom";
 import {ContactInfoAndForm} from "./components/contacts/ContactInfoAndForm";
 import {Education} from "./components/Education";
@@ -25,7 +25,6 @@ export default function App() {
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
 
-            <withRouter>
         <Router>
             <ScopedCssBaseline>
                 <div className="container">
@@ -67,7 +66,7 @@ export default function App() {
                 </div>
             </ScopedCssBaseline>
         </Router>
-            </withRouter>
+
 
         </BrowserRouter>
     )
