@@ -1,6 +1,11 @@
 import * as React from "react";
 import s from './Navbar.module.css';
-import {NavLink} from "react-router-dom";
+import ScalingHomeAnimatedButton from "../animated/animatedButton/homeAnimatedButton";
+import ScalingEducationAnimatedButton from "../animated/animatedButton/educationAnimatedButton";
+import ScalingExperienceAnimatedButton from "../animated/animatedButton/workExperienceAnimatedButton";
+import ScalingSkillsAnimatedButton from "../animated/animatedButton/skillsAnimatedButton";
+import ScalingPortfolioAnimatedButton from "../animated/animatedButton/portfolioAnimatedButton";
+import ScalingContactsAnimatedButton from "../animated/animatedButton/contactsAnimatedButton";
 
 
 export const Navbar = () => {
@@ -16,27 +21,27 @@ export const Navbar = () => {
                         Mytrofanov Maxym Front-end Developer
                     </span>
                 </div>
-                <div id="navi_list" className={s.navi_list}>
-                    <li id="Home">
-                        <NavLink to="/home" activeClassName={s.ActiveLink}>Home</NavLink>
-                    </li>
-                    <li id="About">
-                        <NavLink to="/home" activeClassName={s.ActiveLink}>About me</NavLink>
-                    </li>
+                <div id="navi_list" className={s.navi_list} >
+                    <div>
+                        <li id="Home" >
+                          <ScalingHomeAnimatedButton/>
+                        </li>
+                    </div>
+
                     <li id="Education">
-                        <NavLink to="/education" activeClassName={s.ActiveLink}>Education</NavLink>
+                       <ScalingEducationAnimatedButton/>
                     </li>
                     <li id="Experience">
-                        <NavLink to="/experience" activeClassName={s.ActiveLink}>Work Experience</NavLink>
+                        <ScalingExperienceAnimatedButton/>
                     </li>
                     <li id="Skills">
-                        <NavLink to="/skills" activeClassName={s.ActiveLink}>Skills</NavLink>
+                        <ScalingSkillsAnimatedButton/>
                     </li>
                     <li id="Portfolio">
-                        <NavLink to="/portfolio" activeClassName={s.ActiveLink}>Portfolio</NavLink>
+                        <ScalingPortfolioAnimatedButton/>
                         </li>
                     <li id="Contacts">
-                        <NavLink to="/contact" activeClassName={s.ActiveLink}>Contacts</NavLink>
+                        <ScalingContactsAnimatedButton/>
                         </li>
 
                 </div>
