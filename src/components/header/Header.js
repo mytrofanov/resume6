@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Header.module.css'
 import ScalingHireMeAnimatedButton from "../animated/animatedButton/scalingHireMeAnimatedButton";
+import AnimatedTitle from "../animated/animatedTitle/animatedTitle";
 
 
 
@@ -12,7 +13,7 @@ export const Header = () => {
         <div className={s.header} id="header">
             <div className={s.flagOfUkraine}/>
             <div id="header_title" className={s.header_title}>
-                Lets Make Something Great
+                <AnimatedTitle/>
                 <div className={s.header_annotation} id="header_annotation">
                     A free people ought not only be armed and disciplined,
                     but they should have sufficient arms and ammunition to maintain a status
