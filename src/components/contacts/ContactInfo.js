@@ -35,19 +35,19 @@ export function ContactInfo() {
                     </div>
                 </div>
 
-                <div className={s.InfoBlock}>
-                    <div className={s.icon}>
-                        <LocalPhoneOutlinedIcon
-                            sx={{
-                                fontSize: 40,
-                                transform: 'rotate(90deg)'
-                            }}/>
-                    </div>
-                    <div>
-                        <h3 className={s.InfoHeader}>Phone Call</h3>
-                        <span className={s.InfoText}>+38 (067) 825 35 25 </span>
-                    </div>
-                </div>
+                {/*<div className={s.InfoBlock}>*/}
+                {/*    <div className={s.icon}>*/}
+                {/*        <LocalPhoneOutlinedIcon*/}
+                {/*            sx={{*/}
+                {/*                fontSize: 40,*/}
+                {/*                transform: 'rotate(90deg)'*/}
+                {/*            }}/>*/}
+                {/*    </div>*/}
+                {/*    <div>*/}
+                {/*        <h3 className={s.InfoHeader}>Phone Call</h3>*/}
+                {/*        <span className={s.InfoText}>+38 (067) 825 35 25 </span>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
 
             </div>

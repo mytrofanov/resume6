@@ -7,16 +7,16 @@ export const SkillPage = () => {
           <div className={s.Skills}>
               <div className={s.SkillsHeader}>
                   My Skills
-                  {/*Линия подчеркивания*/}
+                  {/*underline*/}
                   <div className={s.Divider}/>
-                  {/*Линия подчеркивания*/}
+                  {/*underline*/}
               </div>
 
               <div className={s.SkillsCol}>
 
                   <div className={s.SkillsSlider}>
                       Javascript
-                      <Skills percent={80}/>
+                      <Skills percent={90}/>
                       React+Redux
                       <Skills percent={75}/>
                       MobX
@@ -24,13 +24,17 @@ export const SkillPage = () => {
                       NodeJs
                       <Skills percent={65}/>
                       TypeScript
-                      <Skills percent={70}/>
+                      <Skills percent={85}/>
+                      Sequelize
+                      <Skills percent={85}/>
                   </div>
 
                   <div className={s.SkillsSlider}>
                       HTML5/CSS3
                       <Skills percent={90}/>
                       Bootstrap
+                      <Skills percent={90}/>
+                      Material UI
                       <Skills percent={90}/>
                       Version Control/Git
                       <Skills percent={95}/>
@@ -40,8 +44,6 @@ export const SkillPage = () => {
                       <Skills percent={60}/>
                   </div>
               </div>
-
-
           </div>
 
       </div>
