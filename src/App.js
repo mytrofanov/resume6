@@ -61,8 +61,6 @@ export default function App() {
                             <Bottom/>
                         </div>
                     </div>
-
-
                 </div>
             </ScopedCssBaseline>
         </Router>

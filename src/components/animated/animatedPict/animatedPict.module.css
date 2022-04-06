@@ -6,7 +6,6 @@
     height: 275px;
     cursor: pointer;
     will-change: transform, opacity;
-    left:5.6%;
 }
 
 .front,
@@ -20,12 +19,170 @@
 
 .front {
     background-image: url('/src/images/cube/bloger.JPG');
+
+
 }
 
 .container {
     display: flex;
     align-items: center;
+    width: 100%;
     height: 100%;
     justify-content: center;
 }
+@media (min-width: 302px) {
+    .c{
+        left:3%;
+    }
+}
+@media (min-width: 640px) {
+    .c{
+        left:1%;
+    }
+}
 
+@media (min-width: 1242px) {
+    .c{
+        left:2%;
+    }
+}
+@media (min-width: 1260px) {
+    .c{
+        left:3%;
+    }
+}
+@media (min-width: 1300px) {
+    .c{
+        left:4%;
+    }
+}
+@media (min-width: 1330px) {
+    .c{
+        left:5%;
+    }
+}
+@media (min-width: 1350px) {
+    .c{
+        left:6%;
+    }
+}
+@media (min-width: 1380px) {
+    .c{
+        left:7%;
+    }
+}
+@media (min-width: 1420px) {
+    .c{
+        left:8%;
+    }
+}
+@media (min-width: 1460px) {
+    .c{
+        left:9%;
+    }
+}
+@media (min-width: 1500px) {
+    .c{
+        left:10%;
+    }
+}
+@media (min-width: 1540px) {
+    .c{
+        left:11%;
+    }
+}
+@media (min-width: 1600px) {
+    .c{
+        left:12.5%;
+    }
+}
+@media (min-width: 1680px) {
+    .c{
+        left:14.4%;
+    }
+}
+@media (min-width: 1790px) {
+    .c{
+        left:18%;
+    }
+}
+@media (min-width: 1900px) {
+    .c{
+        left:19%;
+    }
+}
+@media (min-width: 1960px) {
+    .c{
+        left:20%;
+    }
+}
+@media (min-width: 2000px) {
+    .c{
+        left:21%;
+    }
+}
+@media (min-width: 2100px) {
+    .c{
+        left:22%;
+    }
+}
+@media (min-width: 2180px) {
+    .c{
+        left:23%;
+    }
+}
+@media (min-width: 2250px) {
+    .c{
+        left:24%;
+    }
+}
+@media (min-width: 2360px) {
+    .c{
+        left:24.5%;
+    }
+}
+@media (min-width: 2388px) {
+    .c{
+        left:25%;
+    }
+}
+@media (min-width: 2560px) {
+    .c{
+        left:26.5%;
+    }
+}
+@media (min-width: 2732px) {
+    .c{
+        left:28%;
+    }
+}
+@media (min-width: 2880px) {
+    .c{
+        left:29.2%;
+    }
+}
+@media (min-width: 2960px) {
+    .c{
+        left:29.7%;
+    }
+}
+@media (min-width: 3000px) {
+    .c{
+        left:30%;
+    }
+}
+@media (min-width: 3840px) {
+    .c{
+        left:34.3%;
+    }
+}
+@media (min-width: 4096px) {
+    .c{
+        left:35.3%;
+    }
+}
+@media (min-width: 4096px) {
+    .c{
+        left:38.3%;
+    }
+}
