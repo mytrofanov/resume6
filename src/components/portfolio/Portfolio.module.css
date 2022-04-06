@@ -1,7 +1,22 @@
 .PortfolioBlock {
     padding-top: 65px;
     padding-left: 115px;
+
 }
+.AnimatedPortfolioBlock{
+    display: flex;
+    align-items: center;
+    height: 250px;
+}
+.AnimatedPortfolioBlock.fill{
+    height: 100%;
+}
+.AnimatedPortfolioBlock.center{
+    justify-content: center;
+}
+
+
+
 .samurai {
     width: 400px;
     height: auto;
