@@ -1,9 +1,11 @@
 import s from './ContactInfo.module.css'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
-import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import {useContext} from "react";
+import {Context} from "../../App";
 
 export function ContactInfo() {
+    let language = useContext(Context)
     return (
         <div>
             <div className={s.ContactInfo}>
@@ -16,8 +18,14 @@ export function ContactInfo() {
                             }}/>
                     </div>
                     <div>
-                        <h3 className={s.InfoHeader}>Location</h3>
-                        <span className={s.InfoText}>Ukraine, Kryvyi Rih city, 50082 </span>
+                        <h3 className={s.InfoHeader}>
+                            {language === 'English'&& 'Location' }
+                            {language === 'Ukrainian'&& 'Адреса' }
+                            </h3>
+                        <span className={s.InfoText}>
+                            {language === 'English'&& 'Ukraine, Kryvyi Rih city, 50082' }
+                            {language === 'Ukrainian'&& 'Україна, місто Кривий Ріг, 50082' }
+                             </span>
                     </div>
                 </div>
 
