@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useContext, useRef, useState} from "react";
 import {useForm} from "react-hook-form";
 import "./Feedback.module.css";
 import {AlertMessage} from "../aletrMessage/AlertMessage";
@@ -6,6 +6,7 @@ import {ErrorAlertMessage} from "../aletrMessage/ErrorAlertMessage";
 import axios from "axios";
 import {useSpring, animated, config} from "@react-spring/web";
 import s from "../animated/animatedButton/style/scalingAnimatedFormButton.module.scss";
+import {Context} from "../../App";
 
 const calc = (x, y, rect) => [
     -(y - rect.top - rect.height / 2) / 5,
@@ -23,7 +24,7 @@ export default function FeedbackForm() {
     const ref = useRef(null);
     const [xys, set] = useState([0, 0, 1]);
     const props = useSpring({xys, config: config.gentle});
-
+    let language = useContext(Context)
     // Form:
     const {register, handleSubmit} = useForm();
     const onSubmit = (textFromForm) => {
@@ -51,12 +52,15 @@ export default function FeedbackForm() {
 
     return (
 
-        <div className="form">
+    <div className="form">
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                    <label htmlFor="Leave a Message">Leave a Message</label>
+                    <label htmlFor="Leave a Message">
+                        {language === 'English'&& 'Leave a Message' }
+                        {language === 'Ukrainian'&& 'Залиште повідомлення' }
+                        </label>
                     <input name="user_name" className="name" id="InputName"
-                           placeholder="Name*" {...register("Name")} />
+                           placeholder={language === 'English'? 'Name' : `Iм'я` } {...register("Name")} />
                 </div>
 
                 <div>
@@ -70,14 +74,15 @@ export default function FeedbackForm() {
                 <div>
 
                     <textarea rows="10" cols="45" name="text"
-                              placeholder="Message* " {...register("Message")}/>
+                              placeholder={language === 'English'? 'Message' : 'Повідомлення' }
+                              {...register("Message")}/>
                     {success && <AlertMessage/>}
                     {error && <ErrorAlertMessage errorText={errorText}/>}
                 </div>
                 <div className={s.ccardMain} ref={ref}>
                     <animated.input
                         type="submit"
-                        value="Hire Me!"
+                        value={language === 'English'? 'Send' : 'Відправити' }
                         className={s.ccard}
                         style={{transform: props.xys.to(trans)}}
                         onMouseLeave={() => set([0, 0, 1])}
