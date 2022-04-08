@@ -19,10 +19,10 @@ export const Experience = () => {
                         {language === 'Ukrainian' && '2022 січ -сьогодні --- Junior Front End Developer, Freelancer ---'}
                     </div>
                     <div className={s.BlackBlockText}>
-                        {language === 'English' && 'Made Pet-project (Backend & FrontEnd) with  React, NodeJs, MobX, ' +
+                        {language === 'English' && 'Worked with Backend & FrontEnd used  React, NodeJs, MobX, ' +
                             'React Bootstrap,\n' +
                             '                        PostgreSQL,Sequelize, axios, react-hooks, etc.'}
-                        {language === 'Ukrainian' && 'Зробив Pet-project (Backend & FrontEnd) з використанням  React, ' +
+                        {language === 'Ukrainian' && 'Працював з Backend та FrontEnd з використанням  React, ' +
                             'NodeJs, MobX, React Bootstrap,\n' +
                             '                        PostgreSQL,Sequelize, axios, react-hooks, etc.'}
 

@@ -36,8 +36,10 @@ export default function FeedbackForm() {
 
         axios.post('https://mytrofanov.guru/mail.php', params
         )
-            .then(response => console.log('response: ', response))
-            .then(response => () => setSuccessFormSend(true))
+            .then(response => {
+                console.log('response: ', response)
+                setSuccessFormSend(true)
+            })
             .catch(error => {
                 console.log('error message: ', error)
                 if (error.response === undefined) {
