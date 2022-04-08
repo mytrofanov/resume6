@@ -12,12 +12,11 @@ export const ErrorAlertMessage = ({errorText}) => {
         <Stack sx={{width: '100%'}} spacing={2}>
             <Alert severity="error" variant="filled">
                 {language === 'English'&& <> <AlertTitle> Your message was not send</AlertTitle>
-                    Reason: {errorText}
-                    You can get me on e-mail:  <strong>MytrofanovMaxym@gmail.com</strong></> }
+                    Reason : <span> {errorText} </span>
+                    Dont worry, You can still get me on e-mail: <strong>MytrofanovMaxym@gmail.com</strong></> }
                 {language === 'Ukrainian'&&<> <AlertTitle> Ваше повідомлено не відправлено</AlertTitle>
-                    Причина: {errorText}
-                    Можна зв'язатися зі мною по e-mail:  <strong>MytrofanovMaxym@gmail.com</strong></> }
-
+                    Причина : { errorText },
+                    Нема причин для хвилювання, можна зв'язатися зі мною по e-mail:  <strong>MytrofanovMaxym@gmail.com</strong></> }
 
             </Alert>
         </Stack>

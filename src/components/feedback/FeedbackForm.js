@@ -16,8 +16,9 @@ const trans = (x, y, s) =>
     `perspective(300px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 export default function FeedbackForm() {
-    const [errorText, setErrorText] = useState()
-    const [sucsess, setSuscessFormSend] = useState(false)
+    const [errorText, setErrorText] = useState('')
+    const [success, setSuccessFormSend] = useState(false)
+    const [error, setError] = useState(false)
 // Animation:
     const ref = useRef(null);
     const [xys, set] = useState([0, 0, 1]);
@@ -32,15 +33,17 @@ export default function FeedbackForm() {
         params.append('user_email', textFromForm.email);
         params.append('text', textFromForm.Message);
 
-
         axios.post('https://mytrofanov.guru/mail.php', params
         )
-            .then(response => console.log(response))
-            .then(response => setSuscessFormSend(true))
-            .catch(error => console.log(error))
-            .catch(error => setErrorText(error))
-
-
+            .then(response => console.log('response: ', response))
+            .then(response => () => setSuccessFormSend(true))
+            .catch(error => {
+                console.log('error message: ', error)
+                if (error.response === undefined) {
+                    setErrorText('Network error or CORS')
+                    setError(true)
+                }
+            })
     };
 
     // http://mytrofanov.guru/mail.php
@@ -68,8 +71,8 @@ export default function FeedbackForm() {
 
                     <textarea rows="10" cols="45" name="text"
                               placeholder="Message* " {...register("Message")}/>
-                    {sucsess && <AlertMessage/>}
-                    {errorText && <ErrorAlertMessage errorText={errorText}/>}
+                    {success && <AlertMessage/>}
+                    {error && <ErrorAlertMessage errorText={errorText}/>}
                 </div>
                 <div className={s.ccardMain} ref={ref}>
                     <animated.input
@@ -91,5 +94,5 @@ export default function FeedbackForm() {
         </div>
 
 
-);
+    );
 }
