@@ -1,12 +1,18 @@
 import s from "./about/About.module.css";
 import Skills from "./skills/Skills";
+import {useContext} from "react";
+import {Context} from "../App";
 
 export const SkillPage = () => {
+    let language = useContext(Context)
+
   return (
       <div>
           <div className={s.Skills}>
               <div className={s.SkillsHeader}>
-                  My Skills
+                  {language === 'English'&& 'My Skills' }
+                  {language === 'Ukrainian'&& 'Мої Навички' }
+
                   {/*underline*/}
                   <div className={s.Divider}/>
                   {/*underline*/}
