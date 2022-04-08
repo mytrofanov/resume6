@@ -1,7 +1,8 @@
-import React, {useRef, useState} from "react";
+import React, {useContext, useRef, useState} from "react";
 import {useSpring, animated, config} from "@react-spring/web";
 import s from './style/scalingAnimatedHomeButton.module.scss'
 import {NavLink, useLocation} from "react-router-dom";
+import {Context} from "../../../App";
 
 const calc = (x, y, rect) => [
     -(y - rect.top - rect.height / 2) / 5,
@@ -16,6 +17,7 @@ export default function ScalingExperienceAnimatedButton() {
     const [xys, set] = useState([0, 0, 1]);
     const props = useSpring({xys, config: config.gentle});
     const sampleLocation = useLocation();
+    let language = useContext(Context);
 
     return (
         <div className={s.ccardMain} ref={ref}>
@@ -29,11 +31,18 @@ export default function ScalingExperienceAnimatedButton() {
                 }}
             >
                 <NavLink to="/experience" className={s.homeItem}
-                    style={sampleLocation.pathname === '/experience' ? {color: 'white', textDecoration: 'none'}: null}
-                        > Work Experience
-                        < /NavLink>
-                        </animated.button>
+                         style={sampleLocation.pathname === '/experience' ? {
+                             color: 'white',
+                             textDecoration: 'none'
+                         } : null}
+                >
+                    {language === 'English'&& 'Work Experience' }
+                    {language === 'Ukrainian'&& 'Досвід Роботи' }
 
-                        </div>
-                        );
-                    }
+
+                </NavLink>
+            </animated.button>
+
+        </div>
+    );
+}

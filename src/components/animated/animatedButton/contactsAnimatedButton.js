@@ -1,7 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, {useContext, useRef, useState} from "react";
 import { useSpring, animated, config } from "@react-spring/web";
 import s from './style/scalingAnimatedHomeButton.module.scss'
 import {NavLink, useLocation} from "react-router-dom";
+import {Context} from "../../../App";
 
 const calc = (x, y, rect) => [
     -(y - rect.top - rect.height / 2) / 5,
@@ -16,6 +17,7 @@ export default function ScalingContactsAnimatedButton() {
     const [xys, set] = useState([0, 0, 1]);
     const props = useSpring({ xys, config: config.gentle});
     const sampleLocation = useLocation();
+    let language = useContext(Context);
     return (
         <div className={s.ccardMain} ref={ref}>
             <animated.button
@@ -29,7 +31,11 @@ export default function ScalingContactsAnimatedButton() {
             >
                 <NavLink to="/contact" className={s.homeItem}
                     style = {sampleLocation.pathname === '/contact' ? {color:'white', textDecoration:'none'}: null}
-                >Contacts</NavLink>
+                >
+                    {language === 'English'&& 'Contacts' }
+                    {language === 'Ukrainian'&& 'Контакти' }
+
+                    </NavLink>
             </animated.button>
 
         </div>

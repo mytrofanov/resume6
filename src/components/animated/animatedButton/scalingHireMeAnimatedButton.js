@@ -11,7 +11,7 @@ const calc = (x, y, rect) => [
 const trans = (x, y, s) =>
     `perspective(300px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-export default function ScalingHireMeAnimatedButton() {
+export default function ScalingHireMeAnimatedButton({language}) {
     const ref = useRef(null);
     const [xys, set] = useState([0, 0, 1]);
     const props = useSpring({ xys, config: config.gentle});
@@ -27,7 +27,11 @@ export default function ScalingHireMeAnimatedButton() {
                     set(calc(e.clientX, e.clientY, rect));
                 }}
             >
-                   <NavLink to="/contact" >Hire me!</NavLink>
+                   <NavLink to="/contact" >
+                       {language === 'English' && 'Hire me!'}
+                       {language === 'Ukrainian' && 'Найняти мене!'}
+
+                       </NavLink>
             </animated.button>
 
         </div>

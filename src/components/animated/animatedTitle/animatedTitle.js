@@ -10,7 +10,7 @@ const calc = (x, y, rect) => [
 const trans = (x, y, s) =>
     `perspective(300px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-export default function AnimatedTitle() {
+export default function AnimatedTitle({language}) {
     const ref = useRef(null);
     const [xys, set] = useState([0, 0, 1]);
     const props = useSpring({ xys, config: config.gentle});
@@ -26,7 +26,9 @@ export default function AnimatedTitle() {
                     set(calc(e.clientX, e.clientY, rect));
                 }}
             >
-                Lets Make Something Great
+                {language === 'English' && 'Lets Make Something Great'}
+                {language === 'Ukrainian' && 'Ми Змінемо Світ На Краще!'}
+
             </animated.div>
 
         </div>

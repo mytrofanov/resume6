@@ -1,8 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, {useContext, useRef, useState} from "react";
 import { useSpring, animated, config } from "@react-spring/web";
 import s from './style/scalingAnimatedHomeButton.module.scss'
 import {NavLink} from "react-router-dom";
 import { useLocation } from "react-router-dom"
+import {Context} from "../../../App";
 
 const calc = (x, y, rect) => [
     -(y - rect.top - rect.height / 2) / 5,
@@ -13,6 +14,7 @@ const trans = (x, y, s) =>
     `perspective(300px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 export default function ScalingHomeAnimatedButton() {
+    let language = useContext(Context);
     const ref = useRef(null);
     const [xys, set] = useState([0, 0, 1]);
     const props = useSpring({ xys, config: config.gentle});
@@ -20,6 +22,7 @@ export default function ScalingHomeAnimatedButton() {
 
     return (
         <div className={s.ccardMain} ref={ref}>
+
             <animated.button
                 className={s.ccard}
                 style={{ transform: props.xys.to(trans) }}
@@ -31,7 +34,10 @@ export default function ScalingHomeAnimatedButton() {
             >
                 <NavLink to="/home" className={s.homeItem}
                 style={sampleLocation.pathname === '/home' ? {color:'white', textDecoration:'none'} : null}
-                >Home</NavLink>
+                >
+                    {language === 'English'&& 'Home' }
+                    {language === 'Ukrainian'&& 'Головна' }
+                </NavLink>
             </animated.button>
 
         </div>

@@ -7,6 +7,12 @@
 }
 .flagOfUkraine{
     background: url('/src/images/ukraine.svg') right no-repeat;
+    background-size: contain;
+    height: 10%;
+}
+.flagOfGreatBritain{
+    background: url('/src/images/britishFlag2.jpg') right no-repeat;
+    background-size: contain;
     height: 10%;
 }
 

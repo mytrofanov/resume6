@@ -22,7 +22,6 @@ export const Navbar = () => {
                     {/*    Mytrofanov Maxym Front-end Developer*/}
                     {/*</span>*/}
                     <AnimatedPict/>
-
                 </div>
                 <div id="navi_list" className={s.navi_list}>
                     <div>
@@ -49,6 +48,7 @@ export const Navbar = () => {
 
                 </div>
             </div>
+
         </div>
     )
 }
