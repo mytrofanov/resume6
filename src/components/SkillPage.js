@@ -4,7 +4,7 @@ import {Context} from "../App";
 import JSLogo from './../images/Javascript_badge.svg'
 import reduxLogo from './../images/Redux.png'
 import NodeJsLogo from './../images/Node.js_logo.svg'
-import MobXLogo from './../images/react-mobx-typescript.png'
+import MobXLogo from './../images/mobx.svg'
 import SequelizeLogo from './../images/sequelizejs-ar21.svg'
 import WebpackLogo from './../images/webpack_plain_logo_icon_146297.svg'
 import HTML5Logo from './../images/CSS3_and_HTML5_logos_and_wordmarks.svg'
@@ -12,7 +12,26 @@ import BootstrapLogo from './../images/Bootstrap_logo.svg'
 import MaterialUILogo from './../images/material-ui-1.svg'
 import GitLogo from './../images/Git-logo.svg'
 import PostgreSQLLogo from './../images/Postgresql_elephant.svg'
-import 'animate.css';
+import ReactLogo from './../images/React-icon.svg'
+import TypeScriptLogo from './../images/Typescript_logo_2020.svg'
+import AnimatedLogo from "./animated/animatedLogo";
+
+
+const logos = [
+    { text:'Javascript Logo', pict: JSLogo}, { text:'React Logo', pict: ReactLogo},
+    { text:'Redux Logo', pict: reduxLogo},{ text:'TypeScript Logo', pict: TypeScriptLogo},
+    { text:'NodeJs Logo', pict: NodeJsLogo},
+    {  text:'Mobx Logo', pict: MobXLogo},
+    { text:'Sequelize Logo', pict: SequelizeLogo},
+    {  text:'PostgreSQL Logo', pict: PostgreSQLLogo},
+    { text:"Webpack Logo", pict: WebpackLogo},
+    {  text:"HTML5 & CSS3 Logo", pict: HTML5Logo},
+    { text:"BootstrapLogo Logo", pict: BootstrapLogo},
+    { text:"Material UI Logo", pict: MaterialUILogo},
+    {  text:"Git Logo", pict: GitLogo},
+]
+
+
 
 export const SkillPage = () => {
     let language = useContext(Context)
@@ -37,19 +56,10 @@ export const SkillPage = () => {
                     </div>
                 </div>
                 <div className={s.skillsLogo}>
-
-                    <img className={s.logos} src={JSLogo} alt="Javascript Logo"/>
-                    <img className={s.logos} src={reduxLogo} alt="Redux Logo"/>
-                    <img className={s.logos} src={MobXLogo} alt="Mobx-React Logo"/>
-                    <img className={s.logos} src={PostgreSQLLogo} alt="PostgreSQL Logo"/>
-                    <img className={s.logos} src={NodeJsLogo} alt="Node JS Logo"/>
-
-                    <img className={s.logos} src={SequelizeLogo} alt="Sequelize Logo"/>
-                    <img className={s.logos} src={WebpackLogo} alt="Webpack Logo"/>
-                    <img className={s.logos} src={HTML5Logo} alt="HTML5 & CSS3 Logo"/>
-                    <img className={s.logos} src={BootstrapLogo} alt="BootstrapLogo Logo"/>
-                    <img className={s.logos} src={MaterialUILogo} alt="Material UI Logo"/>
-                    <img className={s.logos} src={GitLogo} alt="Git Logo"/>
+                    {logos.map((e, idx) =>
+                        <AnimatedLogo logoToAnimate={e.pict} key={idx} altDescription={e.text}
+                        />
+                    )}
 
                 </div>
 
