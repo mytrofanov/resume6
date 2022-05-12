@@ -10,7 +10,7 @@ import {Context} from "../../App";
 export function About() {
     let now = new Date(); //Текущая дата
     let today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); //Текущя дата без времени
-    let dob = new Date(1978, 4, 28); //Дата рождения
+    let dob = new Date(1978, 3, 28); //Дата рождения - отсчет месяцев с нуля
     let dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate()); //ДР в текущем году
     let age; //Возраст
     let language = useContext(Context)
