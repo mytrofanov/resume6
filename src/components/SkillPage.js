@@ -14,6 +14,8 @@ import GitLogo from './../images/Git-logo.svg'
 import PostgreSQLLogo from './../images/Postgresql_elephant.svg'
 import ReactLogo from './../images/React-icon.svg'
 import TypeScriptLogo from './../images/Typescript_logo_2020.svg'
+import Docker from './../images/docker-icon-svgrepo-com.svg'
+import Mongo from './../images/MongoDB_Logo.svg'
 import AnimatedLogo from "./animated/animatedLogo";
 
 
@@ -29,6 +31,8 @@ const logos = [
     { text:"BootstrapLogo Logo", pict: BootstrapLogo},
     { text:"Material UI Logo", pict: MaterialUILogo},
     {  text:"Git Logo", pict: GitLogo},
+    {  text:"Docker Logo", pict: Docker},
+    {  text:"Mongo Logo", pict: Mongo},
 ]
 
 
@@ -52,7 +56,7 @@ export const SkillPage = () => {
                 <div className={s.SkillsCol}>
                     <div className={s.SkillsSlider}>
                         Javascript, React+Redux, MobX, NodeJs, TypeScript, Sequelize, PostgreSQL, Webpack,
-                        HTML5/CSS3, Bootstrap, Material UI, Version Control/Git
+                        HTML5/CSS3, Bootstrap, Material UI, Version Control/Git, Docker, Mongodb
                     </div>
                 </div>
                 <div className={s.skillsLogo}>

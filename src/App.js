@@ -56,7 +56,7 @@ export default function App() {
                                     </Switch>
                                 </div>
                                 <Route path='/contact' component={ContactInfoAndForm}/>
-                                <Route path='/' render={() => <Redirect to={'/portfolio'}/>}/>
+                                <Route path='/' render={() => <Redirect to={'/skills'}/>}/>
 
                                 <div className="BottomOfBottom">
                                     <Bottom/>
