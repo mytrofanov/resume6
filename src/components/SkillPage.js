@@ -55,7 +55,7 @@ export const SkillPage = () => {
 
                 <div className={s.SkillsCol}>
                     <div className={s.SkillsSlider}>
-                        Javascript, React+Redux, MobX, NodeJs, TypeScript, Sequelize, PostgreSQL, Webpack,
+                        Javascript, React+Redux, React Native, MobX, NodeJs, TypeScript, Sequelize, PostgreSQL, Webpack,
                         HTML5/CSS3, Bootstrap, Material UI, Version Control/Git, Docker, Mongodb
                     </div>
                 </div>
